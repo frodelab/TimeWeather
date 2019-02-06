@@ -48,4 +48,11 @@ test:
 
 production:
   url: ENV['DATABASE_URL']
+  adapter: ENV['DB_ADAPTER']
+  encoding: ENV['DB_ENCODING']
+  host: ENV['DB_HOST']
+  port: ENV['DB_PORT']
+  database: ENV['DB_NAME']
   pool: ENV['DB_POOL']
+  username: ENV['DB_USER_NAME']
+  password: ENV['DB_PASSWORD']
