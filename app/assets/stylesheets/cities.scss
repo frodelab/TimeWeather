@@ -1,3 +1,15 @@
 // Place all the styles related to the Cities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#name_stgo{
+  font-size: 46px;
+}
+#time_stgo,
+#weather_stgo{
+  font-size: 80px;
+}
+
+.cities{
+  margin-top: 40px;
+}

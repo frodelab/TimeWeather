@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190206132822) do
+ActiveRecord::Schema.define(version: 20190207145447) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20190206132822) do
     t.string   "short_name"
     t.string   "latitude"
     t.string   "longitude"
-    t.date     "current_time"
+    t.datetime "current_time"
     t.float    "current_weather"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
