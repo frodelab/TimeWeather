@@ -7,17 +7,17 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <span id="name_stgo"><%= "#{@santiago[0]['name']} (#{@santiago[0]['short_name']})" %></span><br>
+      <span id="name_stgo"><%= "#{@santiago['name']} (#{@santiago['short_name']})" %></span><br>
     </div>
     <div class="col-sm-6 col-xs-12">
-      <h5 id="date_stgo" class="main-date"><%= @santiago[0]['current_date'] %></h5>
+      <h5 id="date_stgo" class="main-date"><%= @santiago['current_date'] %></h5>
       <div class="text-center">
-        <span id="time_stgo" class="main-time"><%= @santiago[0]['current_time'] %></span>
+        <span id="time_stgo" class="main-time"><%= @santiago['current_time'] %></span>
       </div>
     </div>
     <div class="col-sm-6 col-xs-12 text-center">
       <h5>Temperature</h5>
-      <span id="weather_stgo" class="main-weather"><%= @santiago[0]['current_weather'] %>ºC</span>
+      <span id="weather_stgo" class="main-weather"><%= @santiago['current_weather'] %>ºC</span>
     </div>
   </div>
   <div class="cities justify-content-center">
