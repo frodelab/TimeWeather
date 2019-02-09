@@ -15,7 +15,6 @@ module CitiesHelper
   def update_redis_time_weather(cities)
     json_cities = JSON.parse cities
     json_cities.each do |city|
-      # city = json_cities[0]
       date, time, weather = City.time_weather_by_coords(city['latitude'], city['longitude'])
       city['current_date'] = date
       city['current_time'] = time

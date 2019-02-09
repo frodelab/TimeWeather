@@ -1,4 +1,10 @@
 <div class="container">
+  <div class="alert alert-danger alert-dismissible fade" role="alert">
+    <span id="alert-message">You should check in on some of those fields below.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
   <div class="row">
     <div class="col-sm-12">
       <span id="name_stgo"><%= "#{@santiago[0]['name']} (#{@santiago[0]['short_name']})" %></span><br>
