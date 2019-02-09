@@ -7,7 +7,6 @@ App.time_weather = App.cable.subscriptions.create "TimeWeatherChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
-    console.log(data)
     if data['errors'].length > 0
       $('#alert-message').html(data['errors'])
       $('.alert').addClass 'show'
